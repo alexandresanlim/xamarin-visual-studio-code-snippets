@@ -1,11 +1,11 @@
 ﻿# Xamarin Code Snippets for Visual Studio
 
-### AsyncCommand
+### AsyncCommand (asyncCmd)
 
 
 <img src="https://raw.githubusercontent.com/alexandresanlim/xamarin-code-snippets/main/Demonstration/CSharp/asynCommand.gif" />
 
-### BindableProperty
+### BindableProperty (propB)
 
 
 <img src="https://raw.githubusercontent.com/alexandresanlim/xamarin-code-snippets/main/Demonstration/CSharp/bindableProperty.gif" />
