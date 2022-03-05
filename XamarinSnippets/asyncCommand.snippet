@@ -4,8 +4,10 @@
 		<Header>
 			<Title>asyncCmd</Title>
 			<Shortcut>asyncCmd</Shortcut>
-			<Description>Code snippet for an automatically implemented async command
-Language Version: C# 3.0 or higher</Description>
+			<Description>
+				Code snippet for an automatically implemented async command
+				Language Version: C# 3.0 or higher
+			</Description>
 			<Author>Alexandre Sanlim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -20,22 +22,20 @@ Language Version: C# 3.0 or higher</Description>
 				</Literal>
 			</Declarations>
 			<Code Language= "csharp">
-		<![CDATA[ public IAsyncCommand $method$Command => new AsyncCommand($method$ExecuteAsync);
+				<![CDATA[ public IAsyncCommand $method$Command => new AsyncCommand($method$ExecuteAsync);
 		
 		private async Task $method$ExecuteAsync()
         {
-        }
-		
-    $end$]]>
-  </Code>
-  <Imports>
-        <Import>
-          <Namespace>AsyncAwaitBestPractices.MVVM</Namespace>
-        </Import>
-		<Import>
-          <Namespace>System.Threading.Tasks</Namespace>
-        </Import>	  
-      </Imports>
+        } $end$]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>AsyncAwaitBestPractices.MVVM</Namespace>
+				</Import>
+				<Import>
+					<Namespace>System.Threading.Tasks</Namespace>
+				</Import>
+			</Imports>
 		</Snippet>
 	</CodeSnippet>
 </CodeSnippets>

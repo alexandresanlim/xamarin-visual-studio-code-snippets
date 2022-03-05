@@ -4,8 +4,10 @@
 		<Header>
 			<Title>propb</Title>
 			<Shortcut>propb</Shortcut>
-			<Description>Code snippet for an automatically implemented bindable property
-Language Version: C# 3.0 or higher</Description>
+			<Description>
+				Code snippet for an automatically implemented bindable property
+				Language Version: C# 3.0 or higher
+			</Description>
 			<Author>Alexandre Sanlim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -30,7 +32,7 @@ Language Version: C# 3.0 or higher</Description>
 				</Literal>
 			</Declarations>
 			<Code Language= "csharp">
-		<![CDATA[ public static readonly BindableProperty $property$Property = 
+				<![CDATA[ public static readonly BindableProperty $property$Property = 
 			BindableProperty.Create(propertyName: nameof($property$),
                                 returnType: typeof($type$),
                                 declaringType: typeof($controlName$),
@@ -48,15 +50,13 @@ Language Version: C# 3.0 or higher</Description>
 		if (bindable is $controlName$ control && newValue is $type$ value)
         {
         }
-    }
-
-    $end$]]>
-  </Code>
-  <Imports>
-		<Import>
-          <Namespace>Xamarin.Forms</Namespace>
-        </Import>	  
-      </Imports>
+    } $end$]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>Xamarin.Forms</Namespace>
+				</Import>
+			</Imports>
 		</Snippet>
 	</CodeSnippet>
 </CodeSnippets>
