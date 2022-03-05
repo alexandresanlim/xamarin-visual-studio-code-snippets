@@ -1,1 +1,1 @@
-# xamarin-code-snippets
+# Xamarin Code Snippets for Visual Studio
