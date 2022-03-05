@@ -2,8 +2,11 @@
 
 ## AsyncCommand
 
+<img src="https://raw.githubusercontent.com/alexandresanlim/xamarin-code-snippets/main/Demonstration/CSharp/asynCommand.gif" />
+
 ## BindableProperty
 
+<img src="https://raw.githubusercontent.com/alexandresanlim/xamarin-code-snippets/main/Demonstration/CSharp/bindableProperty.gif" />
 
 # How to use?
 
