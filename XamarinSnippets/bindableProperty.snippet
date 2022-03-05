@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>propb</Title>
+			<Shortcut>propb</Shortcut>
+			<Description>Code snippet for an automatically implemented bindable property
+Language Version: C# 3.0 or higher</Description>
+			<Author>Alexandre Sanlim</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>string</Default>
+				</Literal>
+				<Literal>
+					<ID>property</ID>
+					<ToolTip>Property name</ToolTip>
+					<Default>MyProperty</Default>
+				</Literal>
+				<Literal>
+					<ID>controlName</ID>
+					<ToolTip>Control name</ToolTip>
+					<Default>ControlName</Default>
+				</Literal>
+			</Declarations>
+			<Code Language= "csharp">
+		<![CDATA[ public static readonly BindableProperty $property$Property = 
+			BindableProperty.Create(propertyName: nameof($property$),
+                                returnType: typeof($type$),
+                                declaringType: typeof($controlName$),
+                                defaultValue: string.Empty,
+								defaultBindingMode: BindingMode.Default,
+								propertyChanged: $property$PropertyChanged);
+    public $type$ $property$
+    {
+        get => ($type$)GetValue($property$Property);
+        set => SetValue($property$Property, value);
+    }
+	
+	static void $property$PropertyChanged(BindableObject bindable, object oldValue, object newValue)
+    {
+		if (bindable is $controlName$ control && newValue is $type$ value)
+        {
+        }
+    }
+
+    $end$]]>
+  </Code>
+  <Imports>
+		<Import>
+          <Namespace>Xamarin.Forms</Namespace>
+        </Import>	  
+      </Imports>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

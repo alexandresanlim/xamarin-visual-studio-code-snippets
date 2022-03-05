@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>asyncCmd</Title>
+			<Shortcut>asyncCmd</Shortcut>
+			<Description>Code snippet for an automatically implemented async command
+Language Version: C# 3.0 or higher</Description>
+			<Author>Alexandre Sanlim</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>method</ID>
+					<ToolTip>Set the method name</ToolTip>
+					<Default>MyMethod</Default>
+				</Literal>
+			</Declarations>
+			<Code Language= "csharp">
+		<![CDATA[ public IAsyncCommand $method$Command => new AsyncCommand($method$ExecuteAsync);
+		
+		private async Task $method$ExecuteAsync()
+        {
+        }
+		
+    $end$]]>
+  </Code>
+  <Imports>
+        <Import>
+          <Namespace>AsyncAwaitBestPractices.MVVM</Namespace>
+        </Import>
+		<Import>
+          <Namespace>System.Threading.Tasks</Namespace>
+        </Import>	  
+      </Imports>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
