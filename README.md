@@ -17,5 +17,3 @@
 2. On Visual Studio select Tools > Code Snippets Manager (Ctrl+K Ctrl+B) > Import... > Select files on Xamarin Snippets Folder > Open > Finish
 
 3. Enjoy!
-
-# If possible, make your contribution 🚀
